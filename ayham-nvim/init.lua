@@ -1,0 +1,1 @@
+require 'ayham'.init()
