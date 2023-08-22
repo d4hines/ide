@@ -4,7 +4,7 @@
       "flake": false,
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-xcah3CO3OJL1KUY+6S1tar5HCh5C0kfheC7I/MjstoU=",
+        "narHash": "sha256-LVIpVGPDhCO1tBnOFYTl9SD8cFhwMpQ45dslI3kEqNY=",
         "path": "ayham-nvim",
         "type": "path"
       },

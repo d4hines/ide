@@ -1,4 +1,4 @@
-function init()
+local function init()
 	local cmp = require("cmp")
 	local lspkind = require("lspkind")
 	vim.opt.completeopt = { "menu", "menuone", "noselect" }
@@ -76,4 +76,6 @@ function init()
 	})
 end
 
-return M
+return {
+        init = init,
+}

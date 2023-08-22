@@ -6,6 +6,18 @@ with pkgs.vimPlugins; [
   nvim-dap
   luasnip
   nvim-autopairs
+  alpha-nvim
+  dressing-nvim
+  diffview-nvim
+  nvim-lint
+  fidget-nvim
+  lspkind-nvim
+
+  # dap
+  nvim-dap-ui
+  nvim-dap-python
+  nvim-dap-virtual-text
+  neodev-nvim
 
   # cmp
   nvim-cmp

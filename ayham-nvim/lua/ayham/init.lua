@@ -43,6 +43,8 @@ local function init()
         --set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
         vim.ttyfast = true
 
+        vim.cmd("set cursorline")
+
         -- Setup theme.
         vim.t_Co = 256
         vim.o.background = "dark"
@@ -53,7 +55,11 @@ local function init()
 
         require 'ayham.keymaps'.init()
         require 'ayham.lsp'.init()
+        require 'ayham.treesitter'.init()
         require 'ayham.telescope'.init()
+        require 'ayham.setups'.init()
+        require 'ayham.cmp'.init()
+        require 'ayham.dap'.init()
 end
 
 return {
