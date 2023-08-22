@@ -4,12 +4,15 @@ let
   myNeovimUnwrapped = pkgs.wrapNeovim pkgs.neovim {
     configure = {
       packages.all.start = plugins;
+      customRC = ''
+        lua require("ayham").init()
+      '';
     };
   };
 in
-pkgs.writeShellApplication {
-  name = "nvim";
-  text = ''
-    ${myNeovimUnwrapped}/bin/nvim "$@"
-  '';
-}
+  pkgs.writeShellApplication {
+    name = "nvim";
+    text = ''
+      ${myNeovimUnwrapped}/bin/nvim "$@"
+    '';
+  }

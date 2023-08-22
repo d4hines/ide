@@ -1,16 +1,3 @@
---local function init()
---    --require 'ayham.vim'.init()
---    require 'ayham.theme'.init()
---    require 'ayham.languages'.init()
---    require 'ayham.floaterm'.init()
---    require 'ayham.noice'.init()
---    require 'ayham.telescope'.init()
---end
---
---return {
---    init = init,
---}
-
 local function init()
         vim.g.mapleader = " "
         vim.g.maplocalleader = " "
@@ -60,12 +47,13 @@ local function init()
         vim.t_Co = 256
         vim.o.background = "dark"
         --let g:gruvbox_termcolors=16
-        --let g:gruvbox_contrast_light="hard"
-        --let g:gruvbox_contrast_dark="hard"
-        --colorscheme zellner
-        --colorscheme wal
-        --colorscheme 256_noir
-        vim.cmd("colorscheme catppuccin-mocha")
+        vim.cmd("let g:gruvbox_contrast_light=\"hard\"")
+        vim.cmd("let g:gruvbox_contrast_dark=\"hard\"")
+        vim.cmd("colorscheme gruvbox")
+
+        require 'ayham.keymaps'.init()
+        require 'ayham.lsp'.init()
+        require 'ayham.telescope'.init()
 end
 
 return {

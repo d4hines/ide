@@ -4,7 +4,7 @@
       "flake": false,
       "locked": {
         "lastModified": 1,
-        "narHash": "sha256-W6LQfhK7j76MKXK4aV8BIlSsnJtMGOKX9gAZSqgcnbs=",
+        "narHash": "sha256-xcah3CO3OJL1KUY+6S1tar5HCh5C0kfheC7I/MjstoU=",
         "path": "ayham-nvim",
         "type": "path"
       },
@@ -72,11 +72,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1692580753,
-        "narHash": "sha256-0b3IAOOC6ZGPLGwyze17dQ7aZhIWzy3XYFGUkdzo6LQ=",
+        "lastModified": 1692609479,
+        "narHash": "sha256-p+g5zbaztUGx+FDOSFwFfQqv4mdKub5h2Ln5RSXpJaA=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "4bb71b50b9ccf897df394420667986501ceb9568",
+        "rev": "82c1cc46cdf16196472f7caca69989070894a7d6",
         "type": "github"
       },
       "original": {
@@ -90,7 +90,8 @@
         "ayham-config-src": "ayham-config-src",
         "flake-utils": "flake-utils",
         "neovim": "neovim",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "telescope-recent-files-src": "telescope-recent-files-src"
       }
     },
     "systems": {
@@ -105,6 +106,22 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "telescope-recent-files-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1668872770,
+        "narHash": "sha256-RSbB+fODF7o+n1aF9rYKP4ANPkyxQgi+3ZymTFd2BMI=",
+        "owner": "smartpde",
+        "repo": "telescope-recent-files",
+        "rev": "6893cda11625254cc7dc2ea76e0a100c7deeb028",
+        "type": "github"
+      },
+      "original": {
+        "owner": "smartpde",
+        "repo": "telescope-recent-files",
         "type": "github"
       }
     }

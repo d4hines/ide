@@ -1,6 +1,5 @@
 { pkgs, src }:
 pkgs.vimUtils.buildVimPlugin {
-  name = "ayham-nvim";
-  version = "unstable";
+  name = "telescope-recent-files";
   inherit src;
 }
