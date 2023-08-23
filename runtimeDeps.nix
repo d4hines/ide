@@ -8,6 +8,7 @@ with pkgs; [
   jsonnet-language-server
   lua-language-server
   nil
+  ripgrep
 
   # formatters
   gofumpt
@@ -25,4 +26,5 @@ with pkgs; [
   nodePackages."typescript-language-server"
   nodePackages."vscode-langservers-extracted"
   nodePackages."yaml-language-server"
+  nodePackages."markdownlint-cli"
 ]
