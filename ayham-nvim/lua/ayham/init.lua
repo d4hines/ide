@@ -26,6 +26,9 @@ local function init()
         vim.g.mouse = a
         vim.g.encoding = "utf-8"
         vim.g.autoindent = true
+        vim.g.expandtab = true
+        vim.g.tabstop = 4
+        vim.g.shiftwidth = 4
         vim.opt.number = true
         vim.opt.relativenumber = true
         vim.opt.relativenumber = true
