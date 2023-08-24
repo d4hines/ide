@@ -9,6 +9,7 @@ with pkgs; [
   lua-language-server
   nil
   ripgrep
+  ccls
 
   # formatters
   gofumpt
