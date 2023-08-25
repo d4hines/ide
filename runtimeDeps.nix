@@ -10,6 +10,8 @@ with pkgs; [
   nil
   ripgrep
   ccls
+  clang
+  clang-tools
 
   # formatters
   gofumpt

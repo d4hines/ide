@@ -140,6 +140,8 @@ local function init()
         },
         terraformls = {},
         tsserver = {},
+        ccls = {},
+        clangd = {},
         yamlls = {
             settings = {
                 yaml = {

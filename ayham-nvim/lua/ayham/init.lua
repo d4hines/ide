@@ -30,8 +30,7 @@ local function init()
         vim.opt.tabstop = 4
         vim.opt.shiftwidth = 4
         vim.opt.number = true
-        vim.opt.relativenumber = true
-        vim.opt.relativenumber = true
+        --vim.opt.relativenumber = true
         vim.g.NERDTreeChDirMode = 2
         vim.cmd("set clipboard+=unnamedplus")
 
@@ -46,7 +45,7 @@ local function init()
         --set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
         vim.ttyfast = true
 
-        vim.cmd("set cursorline")
+        --vim.cmd("set cursorline")
 
         -- Setup theme.
         vim.t_Co = 256
