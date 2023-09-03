@@ -34,7 +34,6 @@ with pkgs.vimPlugins; [
   plenary-nvim
   popup-nvim
   telescope-nvim
-  telescope-recent-files
   telescope-fzy-native-nvim
   telescope-dap-nvim
 

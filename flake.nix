@@ -9,18 +9,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     flake-utils.url = "github:numtide/flake-utils";
-
-    telescope-recent-files-src = {
-      url = "github:smartpde/telescope-recent-files";
-      flake = false;
-    };
   };
   outputs = {
     self,
     nixpkgs,
     neovim,
     flake-utils,
-    telescope-recent-files-src,
   }:
     flake-utils.lib.eachDefaultSystem (system: let
       overlayFlakeInputs = prev: final: {
@@ -31,10 +25,6 @@
           // {
             ayham-nvim = import ./packages/myConfig.nix {
               src = ./ayham-nvim;
-              pkgs = prev;
-            };
-            telescope-recent-files = import ./packages/vimPlugins/telescopeRecentFiles.nix {
-              src = telescope-recent-files-src;
               pkgs = prev;
             };
           };
