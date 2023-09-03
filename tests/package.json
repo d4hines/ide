@@ -1,0 +1,11 @@
+{
+  "name": "ide",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ayham-1/ide.git",
+  "author": "Daniel Hines <d4hines@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  }
+}
