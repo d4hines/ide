@@ -56,5 +56,5 @@ with pkgs.vimPlugins; [
   nvim-web-devicons
 
   # my config
-  ayham-nvim
+  d4hines-nvim
 ]

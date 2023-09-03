@@ -23,10 +23,10 @@
         vimPlugins =
           final.vimPlugins
           // {
-            ayham-nvim = pkgs.vimUtils.buildVimPlugin {
-              name = "ayham-nvim";
+            d4hines-nvim = pkgs.vimUtils.buildVimPlugin {
+              name = "d4hines-nvim";
               version = "unstable";
-              src = ./ayham-nvim;
+              src = ./d4hines-nvim;
             };
           };
       };
@@ -51,7 +51,7 @@
         configure = {
           packages.all.start = plugins;
           customRC = ''
-            lua require("ayham").init()
+            lua require("d4hines").init()
           '';
         };
       };

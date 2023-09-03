@@ -55,13 +55,13 @@ local function init()
         vim.cmd("let g:gruvbox_contrast_dark=\"hard\"")
         vim.cmd("colorscheme gruvbox")
 
-        require 'ayham.keymaps'.init()
-        require 'ayham.lsp'.init()
-        require 'ayham.treesitter'.init()
-        require 'ayham.telescope'.init()
-        require 'ayham.setups'.init()
-        require 'ayham.cmp'.init()
-        require 'ayham.dap'.init()
+        require 'd4hines.keymaps'.init()
+        require 'd4hines.lsp'.init()
+        require 'd4hines.treesitter'.init()
+        require 'd4hines.telescope'.init()
+        require 'd4hines.setups'.init()
+        require 'd4hines.cmp'.init()
+        require 'd4hines.dap'.init()
 end
 
 return {
