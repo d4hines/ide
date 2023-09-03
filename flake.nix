@@ -14,18 +14,12 @@
       url = "github:smartpde/telescope-recent-files";
       flake = false;
     };
-
-    ayham-config-src = {
-      url = "path:ayham-nvim";
-      flake = false;
-    };
   };
   outputs = {
     self,
     nixpkgs,
     neovim,
     flake-utils,
-    ayham-config-src,
     telescope-recent-files-src,
   }:
     flake-utils.lib.eachDefaultSystem (system: let
@@ -36,7 +30,7 @@
           final.vimPlugins
           // {
             ayham-nvim = import ./packages/myConfig.nix {
-              src = ayham-config-src;
+              src = ./ayham-nvim;
               pkgs = prev;
             };
             telescope-recent-files = import ./packages/vimPlugins/telescopeRecentFiles.nix {

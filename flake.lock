@@ -1,18 +1,5 @@
 {
   "nodes": {
-    "ayham-config-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-/raePU2PyqbTbCClKXJkTpE4mVzqW5Q7R9i/wMoEbV8=",
-        "path": "ayham-nvim",
-        "type": "path"
-      },
-      "original": {
-        "path": "ayham-nvim",
-        "type": "path"
-      }
-    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -87,7 +74,6 @@
     },
     "root": {
       "inputs": {
-        "ayham-config-src": "ayham-config-src",
         "flake-utils": "flake-utils",
         "neovim": "neovim",
         "nixpkgs": "nixpkgs",
