@@ -1,8 +1,6 @@
 local function init()
         vim.g.mapleader = " "
         vim.g.maplocalleader = " "
-        vim.mapleader = " "
-        vim.maplocalleader = " "
 
         -- general config
         vim.g.auto_reload_config = true
@@ -51,17 +49,18 @@ local function init()
         vim.t_Co = 256
         vim.o.background = "dark"
         --let g:gruvbox_termcolors=16
-        vim.cmd("let g:gruvbox_contrast_light=\"hard\"")
-        vim.cmd("let g:gruvbox_contrast_dark=\"hard\"")
-        vim.cmd("colorscheme gruvbox")
-
-        require 'd4hines.keymaps'.init()
-        require 'd4hines.lsp'.init()
-        require 'd4hines.treesitter'.init()
-        require 'd4hines.telescope'.init()
+        -- vim.cmd("let g:gruvbox_contrast_light=\"hard\"")
+        -- vim.cmd("let g:gruvbox_contrast_dark=\"hard\"")
         require 'd4hines.setups'.init()
-        require 'd4hines.cmp'.init()
-        require 'd4hines.dap'.init()
+
+        vim.cmd("colorscheme catppuccin")
+
+        -- require 'd4hines.keymaps'.init()
+        -- require 'd4hines.lsp'.init()
+        -- require 'd4hines.treesitter'.init()
+        -- require 'd4hines.telescope'.init()
+        -- require 'd4hines.cmp'.init()
+        -- require 'd4hines.dap'.init()
 end
 
 return {
